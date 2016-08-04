@@ -1,4 +1,4 @@
-{% set version = "0.12.0" %}
+{% set version = "0.12.1" %}
 
 package:
   name: nipype
@@ -7,10 +7,10 @@ package:
 source:
   fn: {{ version }}.tar.gz
   url: https://github.com/nipy/nipype/archive/{{ version }}.tar.gz
-  md5: 4d010bae6028cf4622bc1946c679fabc
+  md5: 69a0de06049c694ffaafeed80b2037a1
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install
 
 requirements:
