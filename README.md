@@ -11,6 +11,18 @@ Summary: Nipype, an open-source, community-developed initiative under the umbrel
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/nipype-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/nipype-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/nipype-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/nipype-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/nipype-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/nipype-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nipype/badges/version.svg)](https://anaconda.org/conda-forge/nipype)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nipype/badges/downloads.svg)](https://anaconda.org/conda-forge/nipype)
+
 Installing nipype
 =================
 
@@ -66,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/nipype-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/nipype-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/nipype-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/nipype-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/nipype-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/nipype-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nipype/badges/version.svg)](https://anaconda.org/conda-forge/nipype)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nipype/badges/downloads.svg)](https://anaconda.org/conda-forge/nipype)
 
 
 Updating nipype-feedstock
