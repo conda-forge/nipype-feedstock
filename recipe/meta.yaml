@@ -24,7 +24,7 @@ requirements:
     - nibabel >=2.0.1
     - nose >=1.2
     - future
-    - configparser  # [py27 and py34]
+    - configparser  # [py27 or py34]
     - simplejson >=3.8.0
     - prov >=1.4.0
     - xvfbwrapper
@@ -42,7 +42,7 @@ requirements:
     - nibabel >=2.0.1
     - nose >=1.2
     - future
-    - configparser  # [py27 and py34]
+    - configparser  # [py27 or py34]
     - simplejson >=3.8.0
     - prov >=1.4.0
     - xvfbwrapper
