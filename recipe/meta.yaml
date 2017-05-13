@@ -1,53 +1,63 @@
-{% set version = "0.12.1" %}
+{% set version = "0.13.0" %}
 
 package:
   name: nipype
   version: {{ version }}
 
 source:
-  fn: {{ version }}.tar.gz
-  url: https://github.com/nipy/nipype/archive/{{ version }}.tar.gz
-  md5: 69a0de06049c694ffaafeed80b2037a1
+  fn: nipype-fix-configparser.zip
+  url: https://github.com/satra/nipype/archive/fix/configparser.zip
+  md5: eee9af7179380666601011aa53978d87
 
 build:
-  number: 1
-  script: python setup.py install
+  number: 0
+  script:
+    - rm requirements.txt
+    - python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
   build:
     - python
-    - numpy >=1.6.2
-    - scipy >=0.11
+    - nibabel >=2.1.0
     - networkx >=1.7
-    - traits >=4.3
+    - numpy >=1.6.2
     - python-dateutil >=1.5
-    - nibabel >=2.0.1
-    - nose >=1.2
-    - future
-    - configparser  # [py27 or py34]
+    - scipy >=0.11
+    - traits >=4.6
+    - future >=0.16.0
     - simplejson >=3.8.0
-    - prov >=1.4.0
+    - prov >=1.5.0
+    - click >=6.6.0
+    - funcsigs
+    - configparser  # [py27 or py34]
+    - pytest >=3.0
+    - mock 
+    - pydotplus
     - xvfbwrapper
     - psutil
-    - funcsigs
+    - matplotlib
     - pywin32  # [win]
 
   run:
     - python
-    - numpy >=1.6.2
-    - scipy >=0.11
+    - nibabel >=2.1.0
     - networkx >=1.7
-    - traits >=4.3
+    - numpy >=1.6.2
     - python-dateutil >=1.5
-    - nibabel >=2.0.1
-    - nose >=1.2
-    - future
-    - configparser  # [py27 or py34]
+    - scipy >=0.11
+    - traits >=4.6
+    - future >=0.16.0
     - simplejson >=3.8.0
-    - prov >=1.4.0
+    - prov >=1.5.0
+    - click >=6.6.0
+    - funcsigs
+    - configparser  # [py27 or py34]
+    - pytest >=3.0
+    - mock 
+    - pydotplus
     - xvfbwrapper
     - psutil
-    - funcsigs
+    - matplotlib
     - pywin32  # [win]
 
 test:
