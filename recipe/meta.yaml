@@ -16,8 +16,24 @@ build:
 requirements:
   build:
     - python
-    - setuptools
+    - nibabel >=2.1.0
+    - networkx >=1.7
+    - numpy >=1.6.2
+    - python-dateutil >=1.5
+    - scipy >=0.11
+    - traits >=4.6
     - future >=0.16.0
+    - simplejson >=3.8.0
+    - prov >=1.5.0
+    - click >=6.6.0
+    - funcsigs
+    - configparser  # [not py35 and not py36]
+    - pytest >=3.0
+    - mock 
+    - pydotplus
+    - xvfbwrapper
+    - psutil
+    - matplotlib
     - pywin32  # [win]
 
   run:
@@ -33,7 +49,7 @@ requirements:
     - prov >=1.5.0
     - click >=6.6.0
     - funcsigs
-    - configparser  # [py27 or py34]
+    - configparser  # [not py35 and not py36]
     - pytest >=3.0
     - mock 
     - pydotplus
