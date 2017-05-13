@@ -11,9 +11,7 @@ source:
 
 build:
   number: 0
-  script:
-    - rm requirements.txt
-    - python setup.py install --single-version-externally-managed --record=record.txt
+  script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
   build:
