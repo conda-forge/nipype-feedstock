@@ -5,9 +5,9 @@ package:
   version: {{ version }}
 
 source:
-  fn: nipype-fix-configparser.zip
-  url: https://github.com/satra/nipype/archive/fix/configparser.zip
-  md5: 6d38ba431da5c804af29db511e13d023
+  fn: {{ version }}.tar.gz
+  url: https://github.com/nipy/nipype/archive/{{ version }}.tar.gz
+  md5: 436811a4f56fa6ebd0edc2f243d118dc
 
 build:
   number: 0
