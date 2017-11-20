@@ -1,13 +1,14 @@
-{% set version = "0.14.0-rc1" %}
+{% set version = "0.14.0" %}
+{% set name = "nipype" %}
 
 package:
-  name: nipype
+  name: {{ name }}
   version: {{ version }}
 
 source:
   fn: {{ version }}.tar.gz
-  url: https://github.com/nipy/nipype/archive/{{ version }}.tar.gz
-  md5: 436811a4f56fa6ebd0edc2f243d118dc
+  url: https://github.com/mgxd/{{ name }}/archive/rel/{{ version }}.tar.gz
+  md5: 51E63C1B3B93B476BA001A05BCB722BC
 
 build:
   number: 0
