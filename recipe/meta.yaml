@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ version }}.tar.gz
   url: https://github.com/mgxd/{{ name }}/archive/rel/{{ version }}.tar.gz
-  md5: 51E63C1B3B93B476BA001A05BCB722BC
+  md5: 51e63c1b3b93b476ba001a05bcb722bc
 
 build:
   number: 0
@@ -43,6 +43,7 @@ requirements:
     - psutil
     - matplotlib
     - pywin32  # [win]
+    - packaging
 
 test:
   # Python imports
