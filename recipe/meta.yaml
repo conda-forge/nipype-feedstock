@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ version }}.tar.gz
   url: https://github.com/mgxd/{{ name }}/archive/rel/{{ version }}.tar.gz
-  md5: 6748504daf9b11ff9d91374689aefdcd
+  md5: 03a4e86d18a457ff67fecb5b1df528e5
 
 build:
   number: 0
