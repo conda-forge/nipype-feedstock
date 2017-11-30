@@ -1,13 +1,14 @@
-{% set version = "0.13.1" %}
+{% set version = "v0.14.0" %}
+{% set name = "nipype" %}
 
 package:
-  name: nipype
+  name: {{ name }}
   version: {{ version }}
 
 source:
   fn: {{ version }}.tar.gz
-  url: https://github.com/nipy/nipype/archive/{{ version }}.tar.gz
-  md5: 436811a4f56fa6ebd0edc2f243d118dc
+  url: https://github.com/nipy/{{ name }}/archive/{{ version }}.tar.gz
+  md5: 3cd366cd8e19d9221c0d28fe436748b2
 
 build:
   number: 0
@@ -24,24 +25,25 @@ requirements:
   run:
     - python
     - nibabel >=2.1.0
-    - networkx >=1.7
-    - numpy >=1.6.2
-    - python-dateutil >=1.5
-    - scipy >=0.11
+    - networkx >=1.9
+    - numpy >=1.9.0
+    - python-dateutil >=2.2
+    - scipy >=0.14
     - traits >=4.6
     - future >=0.16.0
     - simplejson >=3.8.0
-    - prov >=1.5.0
+    - prov ==1.5.0
     - click >=6.6.0
     - funcsigs
     - configparser  # [py27 or py34]
     - pytest >=3.0
-    - mock 
+    - mock
     - pydotplus
     - xvfbwrapper
     - psutil
     - matplotlib
     - pywin32  # [win]
+    - packaging
 
 test:
   # Python imports
