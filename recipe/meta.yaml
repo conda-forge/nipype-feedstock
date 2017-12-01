@@ -1,4 +1,4 @@
-{% set version = "v0.14.0" %}
+{% set version = "0.14.0" %}
 {% set name = "nipype" %}
 
 package:
@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ version }}.tar.gz
-  url: https://github.com/nipy/{{ name }}/archive/{{ version }}.tar.gz
+  fn: v{{ version }}.tar.gz
+  url: https://github.com/nipy/{{ name }}/archive/v{{ version }}.tar.gz
   md5: 3cd366cd8e19d9221c0d28fe436748b2
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
