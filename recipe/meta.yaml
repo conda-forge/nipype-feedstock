@@ -1,6 +1,6 @@
 {% set version = "1.0.3" %}
 {% set name = "nipype" %}
-{% set sha256 = "252b7efc5ffaa86e9a27023358b3ac232e420ee84f8ef3f55cc32518afd11afa" %}
+{% set sha256 = "920b149622760afbfda943ef1ed39ab07dc967ddfbdf9af4cb50848dab485437" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/mgxd/{{ name }}/archive/rel/{{ version }}.tar.gz
+  url: https://github.com/nipy/{{ name }}/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
