@@ -14,14 +14,16 @@ Summary: Nipype, an open-source, community-developed initiative under the umbrel
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/nipype-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/nipype-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/nipype-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/nipype-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/nipype-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/nipype-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/nipype-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/nipype-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/nipype-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/nipype-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/nipype-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/nipype-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nipype/badges/version.svg)](https://anaconda.org/conda-forge/nipype)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/nipype/badges/downloads.svg)](https://anaconda.org/conda-forge/nipype)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-nipype-green.svg)](https://anaconda.org/conda-forge/nipype) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/nipype.svg)](https://anaconda.org/conda-forge/nipype) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/nipype.svg)](https://anaconda.org/conda-forge/nipype) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/nipype.svg)](https://anaconda.org/conda-forge/nipype) |
 
 Installing nipype
 =================
