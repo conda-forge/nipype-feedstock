@@ -38,6 +38,7 @@ requirements:
     - funcsigs
     - configparser  # [py27 or py34]
     - pytest >=3.0
+    - pytest-xdist
     - mock
     - pydotplus
     - xvfbwrapper
