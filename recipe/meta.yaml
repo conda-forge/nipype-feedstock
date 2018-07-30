@@ -1,6 +1,6 @@
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 {% set name = "nipype" %}
-{% set sha256 = "6c62c768c8282beffa5da01da5f3979cc6fca3271c9125585aa01711542ca0fe" %}
+{% set sha256 = "b8648e00eed17c67e9c8edf13af4a22683bf6c5474cf70afa22f44637f99d268" %}
 
 package:
   name: {{ name }}
@@ -12,12 +12,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
+    - pip
     - setuptools
     - future >=0.16.0
     - configparser  # [py27 or py34]
