@@ -47,6 +47,7 @@ requirements:
     - matplotlib
     - pywin32  # [win]
     - packaging
+    - futures  # [py27]
 
 test:
   # Python imports
