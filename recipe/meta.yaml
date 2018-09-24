@@ -57,6 +57,7 @@ test:
 about:
   home: https://github.com/nipy/nipype
   license: Apache 2.0
+  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
   summary: 'Nipype, an open-source, community-developed initiative under the
   umbrella of NiPy, is a Python project that provides a uniform interface to
   existing neuroimaging software and facilitates interaction between these
