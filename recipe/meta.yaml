@@ -1,6 +1,6 @@
-{% set version = "1.1.5" %}
+{% set version = "1.1.6" %}
 {% set name = "nipype" %}
-{% set sha256 = "1eb75e799541990c778fbce3503888baf6ba03c21beb895c9511d1540c9d4c6b" %}
+{% set sha256 = "bdc2e0d9ad953714df311c645bb96fb46ba487f90dce4c81ed95269c7a91a381" %}
 
 package:
   name: {{ name }}
@@ -28,7 +28,8 @@ requirements:
     - python
     - nibabel >=2.1.0
     - networkx >=1.9
-    - numpy >=1.9.0
+    - numpy >=1.9.0  # [py < 37]
+    - numpy >=1.15.3  # [py >= 37]
     - python-dateutil >=2.2
     - scipy >=0.14
     - traits >=4.6
