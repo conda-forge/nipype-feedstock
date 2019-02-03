@@ -41,7 +41,7 @@ requirements:
     - funcsigs
     - configparser  # [py27 or py34]
     - pydotplus
-    - xvfbwrapper
+    - xvfbwrapper  # [not win]
     - psutil
     - matplotlib
     - pywin32  # [win]
