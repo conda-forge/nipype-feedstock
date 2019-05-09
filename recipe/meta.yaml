@@ -1,6 +1,6 @@
-{% set version = "1.1.9" %}
+{% set version = "1.2.0" %}
 {% set name = "nipype" %}
-{% set sha256 = "d4bd212a52c5b4abc202529fdd7dd4a91a6fa62c30cb45e96efdbc633b54b147" %}
+{% set sha256 = "bcb2093fbb75ce23587cba443691329674f011bf5527cdd0fc061b4ffd72b895" %}
 
 package:
   name: {{ name }}
@@ -27,7 +27,8 @@ requirements:
   run:
     - python
     - nibabel >=2.1.0
-    - networkx >=1.9
+    - networkx >=1.9,<=2.2  # [py27]
+    - networkx >=1.9  # [py > 27]
     - numpy >=1.9.0,!=1.16.0  # [py < 37]
     - numpy >=1.15.3,!=1.16.0  # [py >= 37]
     - python-dateutil >=2.2
@@ -70,7 +71,7 @@ about:
 
 extra:
   recipe-maintainers:
-    - chrisfilo
+    - chrisgorgo
     - satra
     - mgxd
     - effigies
