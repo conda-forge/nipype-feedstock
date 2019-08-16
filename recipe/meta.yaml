@@ -48,6 +48,7 @@ requirements:
     - pywin32  # [win]
     - packaging
     - futures  # [py27]
+    - pathlib2  # [py27 or py34]
 
 test:
   # Python imports
