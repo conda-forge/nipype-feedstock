@@ -1,6 +1,6 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 {% set name = "nipype" %}
-{% set sha256 = "bcb2093fbb75ce23587cba443691329674f011bf5527cdd0fc061b4ffd72b895" %}
+{% set sha256 = "71bfbe38c54b4bd1162fcffd9a0035c333d73a0161c26822fc33b00af9ebdfcd" %}
 
 package:
   name: {{ name }}
@@ -48,6 +48,7 @@ requirements:
     - pywin32  # [win]
     - packaging
     - futures  # [py27]
+    - pathlib2  # [py27 or py34]
 
 test:
   # Python imports
