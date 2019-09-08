@@ -1,6 +1,6 @@
 {% set version = "1.2.2" %}
 {% set name = "nipype" %}
-{% set sha256 = "d20bd3c0e325e0de135f44a4b1af88ff8f5de658f92988346aa304d8c9d4c258" %}
+{% set sha256 = "03f0c20a200999a8bc2c45ee77bfdf6e3a453ad969a00aa2f2c51ebb25452081" %}
 
 package:
   name: {{ name }}
