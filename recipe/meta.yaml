@@ -49,6 +49,8 @@ requirements:
     - packaging
     - futures  # [py27]
     - pathlib2  # [py27 or py34]
+    - filelock >=3.0.0
+    - lxml <4.4.0  # [py34]
 
 test:
   # Python imports
