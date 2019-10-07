@@ -21,7 +21,7 @@ requirements:
     - pip
     - setuptools
     - future >=0.16.0
-    - configparser  # [py27 or py34]
+    - configparser  # [py27]
     - pywin32  # [win]
 
   run:
@@ -40,7 +40,7 @@ requirements:
     - neurdflib
     - click >=6.6.0
     - funcsigs
-    - configparser  # [py27 or py34]
+    - configparser  # [py27]
     - pydotplus
     - xvfbwrapper  # [not win]
     - psutil
@@ -48,9 +48,8 @@ requirements:
     - pywin32  # [win]
     - packaging
     - futures  # [py27]
-    - pathlib2  # [py27 or py34]
+    - pathlib2  # [py27]
     - filelock >=3.0.0
-    - lxml <4.4.0  # [py34]
     - etelemetry
 
 test:
