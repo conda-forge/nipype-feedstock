@@ -1,6 +1,6 @@
-{% set version = "1.2.3" %}
+{% set version = "1.3.0rc1" %}
 {% set name = "nipype" %}
-{% set sha256 = "ee5c28a087baf21e31b31896f9a42337b35ec4a92d14efe92e25944c197dab95" %}
+{% set sha256 = "428758bf2dccbf573bea2b41df69551d955b43f8e2e7e66439ad784bbed19a1c" %}
 
 package:
   name: {{ name }}
@@ -21,7 +21,7 @@ requirements:
     - pip
     - setuptools
     - future >=0.16.0
-    - configparser  # [py27 or py34]
+    - configparser  # [py27]
     - pywin32  # [win]
 
   run:
@@ -40,7 +40,7 @@ requirements:
     - neurdflib
     - click >=6.6.0
     - funcsigs
-    - configparser  # [py27 or py34]
+    - configparser  # [py27]
     - pydotplus
     - xvfbwrapper  # [not win]
     - psutil
@@ -48,9 +48,8 @@ requirements:
     - pywin32  # [win]
     - packaging
     - futures  # [py27]
-    - pathlib2  # [py27 or py34]
+    - pathlib2  # [py27]
     - filelock >=3.0.0
-    - lxml <4.4.0  # [py34]
     - etelemetry
 
 test:
