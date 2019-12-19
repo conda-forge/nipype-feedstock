@@ -14,6 +14,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
+  skip: true  # [py<35]
 
 requirements:
   build:
@@ -21,14 +22,12 @@ requirements:
     - pip
     - setuptools
     - future >=0.16.0
-    - configparser  # [py27]
     - pywin32  # [win]
 
   run:
     - python
     - nibabel >=2.1.0
-    - networkx >=1.9,<=2.2  # [py27]
-    - networkx >=1.9  # [py > 27]
+    - networkx >=1.9
     - numpy >=1.9.0,!=1.16.0  # [py < 37]
     - numpy >=1.15.3,!=1.16.0  # [py >= 37]
     - python-dateutil >=2.2
@@ -40,15 +39,12 @@ requirements:
     - neurdflib
     - click >=6.6.0
     - funcsigs
-    - configparser  # [py27]
     - pydotplus
     - xvfbwrapper  # [not win]
     - psutil
     - matplotlib
     - pywin32  # [win]
     - packaging
-    - futures  # [py27]
-    - pathlib2  # [py27]
     - filelock >=3.0.0
     - etelemetry
 
