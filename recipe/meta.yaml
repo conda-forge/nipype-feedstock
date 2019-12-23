@@ -1,6 +1,6 @@
-{% set version = "1.3.1" %}
+{% set version = "1.4.0" %}
 {% set name = "nipype" %}
-{% set sha256 = "5f3e6e26b5dd609f1b78791718bcf22cbebc6195d4dafeacae51c07b46d5278a" %}
+{% set sha256 = "7ad51c07f1578a4f8f6c89bf6279d63863e5fd87f7743f9395cfeaec0992ee64" %}
 
 package:
   name: {{ name }}
@@ -14,41 +14,34 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
+  skip: true  # [py<35]
 
 requirements:
   build:
     - python
     - pip
     - setuptools
-    - future >=0.16.0
-    - configparser  # [py27]
     - pywin32  # [win]
 
   run:
     - python
     - nibabel >=2.1.0
-    - networkx >=1.9,<=2.2  # [py27]
-    - networkx >=1.9  # [py > 27]
-    - numpy >=1.9.0,!=1.16.0  # [py < 37]
+    - networkx >=1.9
+    - numpy >=1.12.0,!=1.16.0  # [py < 37]
     - numpy >=1.15.3,!=1.16.0  # [py >= 37]
     - python-dateutil >=2.2
     - scipy >=0.14
-    - traits >=4.6
-    - future >=0.16.0
+    - traits >=4.6,!=5.0
     - simplejson >=3.8.0
     - prov >=1.5.2
     - neurdflib
     - click >=6.6.0
-    - funcsigs
-    - configparser  # [py27]
     - pydotplus
     - xvfbwrapper  # [not win]
-    - psutil
+    - psutil >=5.0
     - matplotlib
     - pywin32  # [win]
     - packaging
-    - futures  # [py27]
-    - pathlib2  # [py27]
     - filelock >=3.0.0
     - etelemetry
 
