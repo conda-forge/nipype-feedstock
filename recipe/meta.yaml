@@ -27,7 +27,7 @@ requirements:
     - python
     - nibabel >=2.1.0
     - networkx >=1.9
-    - numpy >=1.12.0,!=1.16.0  # [py < 37]
+    - numpy >=1.13.0,!=1.16.0  # [py < 37]
     - numpy >=1.15.3,!=1.16.0  # [py >= 37]
     - python-dateutil >=2.2
     - scipy >=0.14
