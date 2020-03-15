@@ -1,6 +1,6 @@
-{% set version = "1.4.2" %}
+{% set version = "1.5.0rc1" %}
 {% set name = "nipype" %}
-{% set sha256 = "935b660bfd81f773bd5291a90a921cc226f62940950c094be04f080f6c69501d" %}
+{% set sha256 = "e8e0c15fadf9a6ffc1dc0a53c1d5610601e976816a61f86b2eed84505de9da92" %}
 
 package:
   name: {{ name }}
@@ -12,9 +12,9 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
-  skip: true  # [py<35]
+  skip: true  # [py<36]
 
 requirements:
   build:
@@ -27,7 +27,7 @@ requirements:
     - python
     - nibabel >=2.1.0
     - networkx >=1.9
-    - numpy >=1.12.0,!=1.16.0  # [py < 37]
+    - numpy >=1.13.0,!=1.16.0  # [py < 37]
     - numpy >=1.15.3,!=1.16.0  # [py >= 37]
     - python-dateutil >=2.2
     - scipy >=0.14
