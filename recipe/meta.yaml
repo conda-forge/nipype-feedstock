@@ -1,6 +1,6 @@
-{% set version = "1.6.0" %}
+{% set version = "1.6.1" %}
 {% set name = "nipype" %}
-{% set sha256 = "727d86d8c5024e68da4e789a061833347fda0f6215e17d7ffb415c9ed3de0679" %}
+{% set sha256 = "09d54a01be2a62bcec4f1621006d44c551fc86e17a67e0260be42871f374fc2b" %}
 
 package:
   name: {{ name }}
@@ -17,7 +17,7 @@ build:
   skip: true  # [py<36]
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - setuptools
@@ -54,16 +54,9 @@ about:
   home: https://github.com/nipy/nipype
   license: Apache-2.0
   license_file: LICENSE
-  summary: 'Nipype, an open-source, community-developed initiative under the
-  umbrella of NiPy, is a Python project that provides a uniform interface to
-  existing neuroimaging software and facilitates interaction between these
-  packages within a single workflow. Nipype provides an environment that
-  encourages interactive exploration of algorithms from different packages
-  (e.g., SPM, FSL, FreeSurfer, AFNI, Slicer, ANTS), eases the design of
-  workflows within and between packages, and reduces the learning curve
-  necessary to use different packages. Nipype is creating a collaborative
-  platform for neuroimaging software development in a high-level language and
-  addressing limitations of existing pipeline systems.'
+  summary: Nipype, an open-source, community-developed initiative under the umbrella of NiPy, is a Python project that provides a uniform interface to existing neuroimaging software and facilitates interaction between these packages within a single workflow. Nipype provides an environment that encourages interactive exploration
+    of algorithms from different packages (e.g., SPM, FSL, FreeSurfer, AFNI, Slicer, ANTS), eases the design of workflows within and between packages, and reduces the learning curve necessary to use different packages. Nipype is creating a collaborative platform for neuroimaging software development in a high-level language
+    and addressing limitations of existing pipeline systems.
 
 extra:
   recipe-maintainers:
