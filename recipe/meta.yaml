@@ -1,6 +1,6 @@
 {% set version = "1.7.1" %}
 {% set name = "nipype" %}
-{% set sha256 = "57ddd2cd3aaa028757a86ef2de8441991339889458a5eed8e4a1d9f1b774ba05" %}
+{% set sha256 = "24654b644e38935c21331c878ea47f0c3bcc4edbd0c4be800653e9b44de8b48b" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/nipy/{{ name }}/archive/rel/{{ version }}.tar.gz
+  url: https://github.com/nipy/{{ name }}/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
