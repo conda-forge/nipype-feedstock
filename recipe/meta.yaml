@@ -44,6 +44,7 @@ requirements:
     - packaging
     - filelock >=3.0.0
     - etelemetry
+    - looseversion
 
 test:
   # Python imports
