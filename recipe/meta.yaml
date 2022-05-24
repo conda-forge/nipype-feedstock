@@ -26,24 +26,22 @@ requirements:
   run:
     - python
     - nibabel >=2.1.0
-    - networkx >=1.9
-    - numpy >=1.13.0,!=1.16.0  # [py < 37]
-    - numpy >=1.15.3,!=1.16.0  # [py >= 37]
+    - networkx >=2.0
+    - numpy >=1.17
     - python-dateutil >=2.2
     - scipy >=0.14
     - traits >=4.6,!=5.0
     - simplejson >=3.8.0
     - prov >=1.5.2
-    - neurdflib
     - click >=6.6.0
-    - pydotplus
+    - pydot >=1.2.3
     - xvfbwrapper  # [not win]
     - psutil >=5.0
     - matplotlib-base
     - pywin32  # [win]
     - packaging
     - filelock >=3.0.0
-    - etelemetry
+    - etelemetry >=0.2.0
     - looseversion
 
 test:
