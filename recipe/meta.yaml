@@ -1,6 +1,6 @@
-{% set version = "1.8.1" %}
+{% set version = "1.8.2" %}
 {% set name = "nipype" %}
-{% set sha256 = "c1aa0ac77949c00868c5996e12f2f3c609b37f5790ecf7221391e24bd967dd67" %}
+{% set sha256 = "a7d978dc44573ebdd7b05ef1daea64383066c66bfc7f9cdea88c1d5456531129" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
   skip: true  # [py<36]
 
