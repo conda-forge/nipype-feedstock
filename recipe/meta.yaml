@@ -18,10 +18,8 @@ build:
   noarch: python
 
 requirements:
-  build:
-    - python {{ python_min }}
   host:
-    - python >={{ python_min }}
+    - python {{ python_min }}
     - pip
     - setuptools
     - pywin32-on-windows
@@ -49,7 +47,8 @@ requirements:
     - puremagic
 
 test:
-  # Python imports
+  requires:
+    - python {{ python_min }}
   imports:
     - nipype
 
