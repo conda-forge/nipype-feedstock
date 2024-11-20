@@ -1,6 +1,7 @@
 {% set version = "1.9.1" %}
 {% set name = "nipype" %}
 {% set sha256 = "b8738e31604034b582064fee163af1164b26d7763c39b21e35b5a5a529b511ad" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name }}
@@ -18,15 +19,15 @@ build:
 
 requirements:
   build:
-    - python
+    - python {{ python_min }}
   host:
-    - python
+    - python >={{ python_min }}
     - pip
     - setuptools
     - pywin32-on-windows
 
   run:
-    - python
+    - python >={{ python_min }}
     - nibabel >=3.0.0
     - networkx >=2.5
     - numpy >=1.21
@@ -38,7 +39,7 @@ requirements:
     - prov >=1.5.2
     - click >=6.6.0
     - pydot >=1.2.3
-    - xvfbwrapper  # [not win]
+    - xvfbwrapper
     - psutil >=5.0
     - pywin32-on-windows
     - packaging
