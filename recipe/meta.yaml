@@ -14,26 +14,25 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
-  skip: true  # [py>310]
+  noarch: python
 
 requirements:
   build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - python
   host:
     - python
     - pip
     - setuptools
-    - pywin32  # [win]
+    - pywin32-on-windows
 
   run:
     - python
-    - nibabel >=2.1.0
-    - networkx >=2.0
-    - numpy >=1.17
+    - nibabel >=3.0.0
+    - networkx >=2.5
+    - numpy >=1.21
     - python-dateutil >=2.2
-    - scipy >=0.14
-    - traits >=4.6,<6.4,!=5.0
+    - scipy >=1.8
+    - traits >=6.2
     - simplejson >=3.8.0
     - rdflib >=5.0.0
     - prov >=1.5.2
@@ -41,12 +40,12 @@ requirements:
     - pydot >=1.2.3
     - xvfbwrapper  # [not win]
     - psutil >=5.0
-    - matplotlib-base
-    - pywin32  # [win]
+    - pywin32-on-windows
     - packaging
     - filelock >=3.0.0
-    - etelemetry >=0.2.0
+    - etelemetry >=0.3.1
     - looseversion
+    - puremagic
 
 test:
   # Python imports
