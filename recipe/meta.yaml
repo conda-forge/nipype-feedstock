@@ -1,6 +1,6 @@
-{% set version = "1.9.1" %}
+{% set version = "1.9.2" %}
 {% set name = "nipype" %}
-{% set sha256 = "b8738e31604034b582064fee163af1164b26d7763c39b21e35b5a5a529b511ad" %}
+{% set sha256 = "c484d6d1ba99d8c2e641bcd611614ed57c33c6cb33ff78bfbe3b2be4474a16fd" %}
 {% set python_min = "3.9" %}
 
 package:
