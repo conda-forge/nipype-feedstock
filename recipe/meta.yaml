@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
   noarch: python
 
@@ -42,6 +42,7 @@ requirements:
     - pywin32-on-windows
     - packaging
     - filelock >=3.0.0
+    - acres
     - etelemetry >=0.3.1
     - looseversion
     - puremagic
